@@ -1,0 +1,10 @@
+out/
+scenes/
+final/
+test/
+cache/
+*.npz
+log_*.txt
+__pycache__/
+*.pyc
+STOP
