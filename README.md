@@ -38,4 +38,7 @@ bash queue.sh                            # render every scene listed in queue.tx
 bash join_film.sh                        # join all 13 scenes -> final/The_Rain_Shop.mp4
 ```
 On first run the sets build their static layers (`static01.npz`, `cache/`). These files are big and generated, so they are not kept in git.
-A scene takes about 30 to 80 minutes on 4 cores.
+A scene takes about 30 to 80 minutes on 4 cores, so the whole hour takes about 12 hours.
+To rebuild the whole film (all 13 scenes are already listed in `queue.txt`): run `bash queue.sh`, then `bash join_film.sh`.
+All pictures and sound are made by the code (only the font file is needed).
+A rebuild gives the same film, but the file is not byte-for-byte identical (video encoding and library versions differ slightly).
